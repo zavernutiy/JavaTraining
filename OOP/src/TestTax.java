@@ -7,9 +7,9 @@ public class TestTax {
 		// TODO Auto-generated method stub
 		NJTax t = new NJTax();
 		
-		t.setGrossIncome(50000);
-		t.setState("NJ");
-		t.setDependents(2);
+		t.setGrossIncome(Double.parseDouble(args[0]));
+		t.setState(args[1]);
+		t.setDependents(Integer.parseInt(args[2]));
 		
 		double yourTax = t.calcTax();
 		
